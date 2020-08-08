@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Easy Tutorials</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./index_style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!----<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">---->
+</head>
+<body>
+    <section class="header" >
+        <div class="container">
+            <img src="images/triptok.svg" alt="logo">
+            <button type="button" class="login-btn"><a href="/login.html">Login</a></button>
+        </div>
+        <h1>Travel Across The Globe</h1>
+        <p>Book with us and get your dream fullfilled!</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Country or City">
+            <div class="input-group-append">
+                <button type="submit" class="input-group-text btn">Search</button>
+            </div>
+        </div>
+    </section>
+    <a  id="id01" style="visibility: hidden;"></a>
+    <section class="features">
+        <h1>Features Destination</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="images/1.jpg" alt="featureimage" />
+                            <div class="price">
+                                <p>190$</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-details">
+                        <h4>Los Angeles</h4>
+                        <p>Subscribe Easy Tutorials Youtube Channel to watch more videos on
+                            website devlopment, UI Designing and Digital Marketing. Press the
+                            bell icon to get immediate notification on new videos.
+                        </p>
+                        <div>
+                            <span><i class="fa fa-map-maker"></i>Los Angeles</span>
+                            <span><i class="fa fa-sun-o"></i>4 Days</span>
+                            <span><i class="fa fa-moon-o"></i>3 Nights</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="images/2.jpg" alt="featureimage" />
+                            <div class="price">
+                                <p>200$</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-details">
+                        <h4>Los Angeles</h4>
+                        <p>Subscribe Easy Tutorials Youtube Channel to watch more videos on
+                            website devlopment, UI Designing and Digital Marketing. Press the
+                            bell icon to get immediate notification on new videos.
+                        </p>
+                        <div>
+                            <span><i class="fa fa-map-maker"></i>Los Angeles</span>
+                            <span><i class="fa fa-sun-o"></i>4 Days</span>
+                            <span><i class="fa fa-moon-o"></i>3 Nights</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="images/3.jpg" alt="featureimage" />
+                            <div class="price">
+                                <p>390$</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-details">
+                        <h4>Los Angeles</h4>
+                        <p>Subscribe Easy Tutorials Youtube Channel to watch more videos on
+                            website devlopment, UI Designing and Digital Marketing. Press the
+                            bell icon to get immediate notification on new videos.
+                        </p>
+                        <div>
+                            <span><i class="fa fa-map-maker"></i>Los Angeles</span>
+                            <span><i class="fa fa-sun-o"></i>4 Days</span>
+                            <span><i class="fa fa-moon-o"></i>3 Nights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <h1>Travelling Gallery</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="images/losangeles.jpg" alt="gallery1">
+                        <h4>Los Angeles</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="images/dubai.jpg" alt="gallery1">
+                        <h4>Dubai</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="images/paris.jpg" alt="gallery1">
+                        <h4>Paris</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                        <img src="images/sweden.jpg" alt="gallery1">
+                        <h4>Sweden</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner-highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2> Get 30% Discount on Top Destination </h2>
+                        <p>Book your tickets before 31st March and Avail 30% Discount</p>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="booking-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="users-feedback">
+        <h1>User Reviews</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Subscribe Easy Tutorials Youtube Channel to watch more videos.Press the
+                            bell icon to get immediate notification on new videos.
+                        </p>
+                        <h5>Pavel Sharma</h5>
+                        <small>London</small>
+                    </div>
+                    <img src="images/user1.jpg">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Subscribe Easy Tutorials Youtube Channel to watch more videos.Press the
+                            bell icon to get immediate notification on new videos.
+                        </p>
+                        <h5>Yeneffer</h5>
+                        <small>Canada</small>
+                    </div>
+                    <img src="images/user2.jpg">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Subscribe Easy Tutorials Youtube Channel to watch more videos.Press the
+                            bell icon to get immediate notification on new videos.
+                        </p>
+                        <h5>Geralt</h5>
+                        <small>Brazil</small>
+                    </div>
+                    <img src="images/user3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/triptok.png" class="footer-logo">
+                    <p>Subscribe Easy Tutorials Youtube Channel to watch more videos.Press the
+                        bell icon to get immediate notification on new videos.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Features</h4>
+                    <p>Deals & Offers</p>
+                    <p>Customer Reviews</p>
+                    <p>Cancelation Policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Contact</h4>
+                    <p><i class="fa fa-phone-square"></i>+1 1574698248</p>
+                    <p><i class="fa fa-envelope"></i>youremail@example.cok</p>
+                    <p><i class="fa fa-home"></i>Tihar Jail,Lucknow</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow us on</h4>
+                    <p><i class="fa fa-facebook-official"></i>+1 1574698248</p>
+                    <p><i class="fa fa-youtube-play"></i>youremail@example.cok</p>
+                    <p><i class="fa fa-twitter"></i>Tihar Jail,Lucknow</p>
+                </div>
+            </div><hr>
+            <p class="copyright">Made with <i class="fa fa-heart"></i> Easy Tutorials.</p>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
